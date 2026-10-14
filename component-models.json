@@ -180,6 +180,25 @@
     ]
   },
   {
+    "id": "faq-item",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "question",
+        "label": "Question",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "answer",
+        "label": "Answer",
+        "value": ""
+      }
+    ]
+  },
+  {
     "id": "fragment",
     "fields": [
       {
@@ -212,6 +231,25 @@
         "value": "",
         "label": "Text",
         "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "quote",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "quote",
+        "label": "Quote",
+        "valueType": "string",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "name": "author",
+        "label": "Author",
+        "valueType": "string",
+        "value": ""
       }
     ]
   }

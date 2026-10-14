@@ -1,0 +1,37 @@
+.faq .faq-item {
+  border-bottom: 1px solid var(--light-color, #ddd);
+}
+
+.faq .faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none; /* hide the default triangle */
+}
+
+.faq .faq-question::-webkit-details-marker {
+  display: none;
+}
+
+/* A plus that turns into a minus when open */
+.faq .faq-question::after {
+  content: '+';
+  font-size: 1.4em;
+  line-height: 1;
+}
+
+.faq .faq-item[open] .faq-question::after {
+  content: '\2212';
+}
+
+.faq .faq-answer {
+  padding: 0 0 1rem;
+}
+
+.faq .faq-answer > :first-child {
+  margin-top: 0;
+}
